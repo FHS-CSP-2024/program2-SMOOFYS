@@ -50,7 +50,9 @@
 #Please write a script that: 
 # - Asks for the user's name and then prints it twice, on two consecutive lines.
 
-
+name=input("What is your name? \n\t")
+print(name + name)
+print(name + name)
 
 
 
@@ -60,6 +62,9 @@
 # - Prints it out twice on a single line so that there is an exclamation mark at the beginning of the line, 
 # - another between the two names and a third one at the end of the line.
 
+name=input("What is your name? ")
+print("!" + name + name)
+print(name + "!" + name + "!")
 
 ## Problem 3 ##
 #Please write a script that: 
@@ -71,10 +76,28 @@
 #   - Street address: 91 Station Road
 #   - City and postal code: Folsom CA, 95630
 
+firstName = input("What is your first name? ")
+lastName = input("What is your last name? ")
+address = input("What is your street address? ")
+city = input("What city do you live in? ")
+postal = input("What is your postal code? ")
+
+print(f"""
+First name: {firstName}
+Last name: {lastName}
+Street Address: {address}
+City and postal code: {city}, {postal}
+""")
+
 ## Problem 4 ##
 #Please write a script that: 
 # - Asks for 3 words 
 # - Puts the words together with dashes and prints that out
+
+word1 = input("Give me a word.\n")
+word2 = input("Give me a word.\n")
+word3 = input("Give me a word.\n")
+print(word1 + "-" + word2 + "-" + word3)
 
 
 ## Problem 5 ##
@@ -88,3 +111,13 @@
 #Mary is a valiant knight, born in the year 1572. 
 #One morning Mary woke up to an awful racket: a dragon was approaching the village. 
 #Only Mary could save the village's residents.
+
+name = input("Please type in a name: ")
+name = name.capitalize()
+year = input("Please type in a year: ")
+print(f"""
+--------------------------
+{name} is an ordinary person living an ordinary life in the year {year} until everything starts to fall apart...
+
+{name} got up to go brush his teeth, only to find their whole bathroom empty. {name} Looked around the whole house but in fact found it empty inside and out. It was only when {name} looked out the window would they realize what was really going on.
+""")
